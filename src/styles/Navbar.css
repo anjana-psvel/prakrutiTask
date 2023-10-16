@@ -90,7 +90,7 @@
       width: 70px;
     }
     .navbar .leftSide {
-      padding-left: 20px;
+      padding-left: 10px;
     }
   }
   
@@ -98,16 +98,18 @@
     
     .navbar .rightSide {
       justify-content: right;
-      /* padding-right: 50px; */
     }
   
-    .navbar .rightSide button {
-      
-      margin-right:10px;
-
+    .navbar .rightSide button {   
+      /* margin:10px; */
+      width:150px;
     }
     .navbar .leftSide {
-      padding-left: 20px;
+      padding-left: 10px;
+    }
+    .navbar .leftSide img{
+      margin-left:5px;
+      width:150px;
     }
   }
   
