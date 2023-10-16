@@ -99,6 +99,10 @@
     .navbar .rightSide {
       justify-content: right;
     }
+    .navbar .rightSide .blogButton{
+        justify-content: right;
+        margin-left:20px;
+    }
   
     .navbar .rightSide button {   
       width:150px;

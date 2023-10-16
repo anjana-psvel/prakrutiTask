@@ -110,12 +110,14 @@ form button :hover{
     height:auto;
   }
   h1{
-    font-size: 25px ;
+    font-size: 20px ;
   }
   
   input{
     height:5px;
 
   }
-  
+  form textarea{
+    margin-top:5px;
+  }
 }
