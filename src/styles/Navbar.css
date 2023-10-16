@@ -1,0 +1,115 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: #63A67C;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+
+.navbar .rightSide .registerButton {
+    justify-content: right;
+    height: 50px;
+    width:200px;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    background-color: #916F4B;
+    color:white;
+}
+.navbar .rightSide .blogButton {
+  justify-content: right;
+  height: 50px;
+  width:100px;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  background-color: #916F4B;
+  color:white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+  .navbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items:self-start;
+    padding-left: 80px;
+  }
+  
+  .navbar .leftSide img {
+    width: 200px;
+    /* margin-top: 10px; */
+    margin-left:30px;
+    z-index: 20;
+  }
+  
+  .navbar .rightSide {
+    /* flex: 50%; */
+    height: 100%;
+    display: flex;
+    margin-right: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .registerButton :hover{
+    cursor: pointer;
+    /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    -webkit-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+ .blogButton :hover{
+  cursor: pointer;
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  -webkit-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ transform: scale(1.2);
+}
+  
+  
+  /* .navbar .rightSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  } */
+  
+  .navbar .rightSide svg {
+    font-size: 40px;
+  } 
+  @media only screen and (max-width: 900px) {
+    .navbar .rightSide a {
+      width: 70px;
+    }
+    .navbar .leftSide {
+      padding-left: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    
+    .navbar .rightSide {
+      justify-content: right;
+      /* padding-right: 50px; */
+    }
+  
+    .navbar .rightSide button {
+      
+      margin-right:10px;
+
+    }
+    .navbar .leftSide {
+      padding-left: 20px;
+    }
+  }
+  
+  
+  
