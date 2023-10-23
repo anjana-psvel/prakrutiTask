@@ -8,7 +8,7 @@
   }
   
 
-.navbar .rightSide .registerButton {
+/* .navbar .rightSide .registerButton {
     justify-content: right;
     height: 50px;
     width:200px;
@@ -27,25 +27,77 @@
   transition: 0.3s;
   background-color: #916F4B;
   color:white;
-}
+} */
 .navbar a {
     color: white;
     text-decoration: none;
     font-family: 'Roboto Mono', monospace;
   }
+  .nav-links{
+    flex:1;
+    text-align: right;
+}
+.navbar #open {
+  padding-left: 0px;
+}
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 12px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content:"";
+    width:0px;
+    height:4px;
+    background:#916F4B;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
   
   .navbar .leftSide {
     flex: 50%;
     height: 100%;
     display: flex;
     align-items:self-start;
-    padding-left: 80px;
+    padding-left: 50px;
   }
   
   .navbar .leftSide img {
     width: 200px;
     /* margin-top: 10px; */
-    margin-left:30px;
+    margin-left:20px;
     z-index: 20;
   }
   
@@ -53,7 +105,7 @@
     /* flex: 50%; */
     height: 100%;
     display: flex;
-    margin-right: 70px;
+    margin-right: 50px;
     align-items: center;
     justify-content: center;
   }
@@ -94,10 +146,13 @@
     }
   }
   
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     
     .navbar .rightSide {
       justify-content: right;
+    }
+    .navbar .rightSide a {
+      display: none;
     }
     .navbar .rightSide .blogButton{
         justify-content: right;
@@ -113,6 +168,18 @@
     .navbar .leftSide img{
       margin-left:5px;
       width:150px;
+    }
+    .hiddenLinks {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .navbar .rightSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
     }
   }
   
